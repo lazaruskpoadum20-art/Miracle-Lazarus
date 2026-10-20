@@ -1,0 +1,183 @@
+/* Selectors
+selectors {property: value;}
+Universal selector (*) - every element */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element (type) selector-matches every tag of that name. */
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grouping selector - comma-separated list  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+    color: blue;
+    margin-bottom: 0.5rem ;
+}
+
+/* descendant selector */   
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* child selector - DIRECT child only. */
+nav ul > li{
+    display: inline-block;
+}
+
+/* id selector (#) - targets the ONE element with that id. */
+#attributeName {
+    border: 2px dashed blue;
+    padding: 8px;
+    background-color: 100%;
+}
+
+/* THE BOX MODEL   */
+/* Every element is a box: content -> padding -> border -> margin (inside out).
+padding = space INSIDE the border.
+Margin 
+*/
+
+section{
+    padding: 24px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #add;
+}
+
+img{
+    border: 4px solid #ccc;
+    padding: 4px;
+    margin: 12px 0;
+    max-width: 100%;
+}
+
+/* COLORS & BACKGROUNDS */
+/* Background-color: */
+header{
+    background-color: black;
+}
+
+mark{
+    background-color: yellowgreen;
+    color: #222;
+}
+
+del{
+    color: red;
+}
+
+thead{
+    background-color: aqua;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.75rem;
+    border-left: 4px solid black;
+    padding-left: 100;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+}
+
+/* DISPLAY & POSITIONING */
+a {
+    display: inline-block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* HOVER EFFECTS */
+nav a {
+    transition: 
+    color 0.2s ease,
+    background-color 0.2s ease;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color:black;
+    background-color: gray;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+table tbody tr:hover {
+    background-color: aquamarine;
+}
+
+/* FLEXBOX (one-dimensional layout: a row OR a column) */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+form > button {
+    padding: 10px 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+/* CSS GRID (two-dimensional layout: rows AND columns at once) */
+form fieldset p {
+    display: grid;
+    grid-template-columns: 140px 1fr; /* = "1 fraction of remaining space" */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* merges double borders into single lines*/
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+} 
+
+/* RESPONSE DESIGN ( media queries) */

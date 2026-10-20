@@ -1,0 +1,59 @@
+/* FLEXBOX (one-dimensional layout: a row OR a column) */
+nav{padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+#imgContainer {
+    width: 10%;
+}
+nav img {
+    width: 100%;
+}
+nav ul  {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+nav button{
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+nav button :hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+/* CSS GRID (two-dimensional layout: rows AND columns at once) */
+form fieldset p {
+    display: grid;
+    /* 1fr="1 fraction of remaining space" */
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+form fieldset{
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    /* merges double borders into single lines */
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
